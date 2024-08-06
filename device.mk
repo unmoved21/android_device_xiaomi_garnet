@@ -50,38 +50,38 @@ SOONG_CONFIG_android_hardware_audio += \
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio@7.0-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.3-impl
+    android.hardware.soundtrigger@2.3-impl:64
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.AGMIPC@1.0-service
+    vendor.qti.hardware.AGMIPC@1.0-service:64
 
 PRODUCT_PACKAGES += \
-    audioadsprpcd \
-    audio.primary.parrot \
-    audio.r_submix.default \
-    audio.usb.default
+    audioadsprpcd:64 \
+    audio.primary.parrot:64 \
+    audio.r_submix.default:64 \
+    audio.usb.default:64
 
 PRODUCT_PACKAGES += \
-    agmcap \
-    agmcompressplay \
-    agmplay \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libbatterylistener \
-    libfmpal \
-    libpalclient \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libsndcardparser \
-    libvolumelistener
+    agmcap:64 \
+    agmcompressplay:64 \
+    agmplay:64 \
+    libagm_compress_plugin:64 \
+    libagm_mixer_plugin:64 \
+    libagm_pcm_plugin:64 \
+    libagmclient:64 \
+    libbatterylistener:64 \
+    libfmpal:64 \
+    libpalclient:64 \
+    libqcompostprocbundle:64 \
+    libqcomvisualizer:64 \
+    libqcomvoiceprocessing:64 \
+    libsndcardparser:64 \
+    libvolumelistener:64
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
 
@@ -121,18 +121,18 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth.audio@2.1.vendor
+    audio.bluetooth.default:64 \
+    android.hardware.bluetooth@1.0.vendor:64 \
+    android.hardware.bluetooth.audio-impl:64 \
+    android.hardware.bluetooth.audio@2.1.vendor:64
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor:64 \
+    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor:64
 
 PRODUCT_PACKAGES += \
-    com.dsi.ant@1.0.vendor
+    com.dsi.ant@1.0.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -140,24 +140,24 @@ PRODUCT_COPY_FILES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service \
-    bootctrl.garnet \
-    bootctrl.garnet.recovery
+    android.hardware.boot@1.2-impl-qti:64 \
+    android.hardware.boot@1.2-impl-qti.recovery:64 \
+    android.hardware.boot@1.2-service:64 \
+    bootctrl.garnet:64 \
+    bootctrl.garnet.recovery:64
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.7.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    android.hardware.camera.provider@2.7.vendor:64 \
+    vendor.qti.hardware.camera.postproc@1.0.vendor:64
 
 PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor \
-    libcamera_metadata.vendor \
-    libexif.vendor \
-    libutilscallstack.vendor \
-    liblz4.vendor \
-    libyuv.vendor
+    libcamera2ndk_vendor:64 \
+    libcamera_metadata.vendor:64 \
+    libexif.vendor:64 \
+    libutilscallstack.vendor:64 \
+    liblz4.vendor:64 \
+    libyuv.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -167,7 +167,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor:64
 
 # Display
 PRODUCT_PACKAGES += \
@@ -176,24 +176,24 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service
 
 PRODUCT_PACKAGES += \
-    init.qti.display_boot.rc \
-    init.qti.display_boot.sh
+    init.qti.display_boot.rc:64 \
+    init.qti.display_boot.sh:64
 
 PRODUCT_PACKAGES += \
-    libdisplayconfig.system.qti \
-    vendor.display.config@1.11.vendor \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    libdisplayconfig.system.qti:64 \
+    vendor.display.config@1.11.vendor:64 \
+    vendor.qti.hardware.display.config-V5-ndk:64 \
+    vendor.qti.hardware.display.config-V2-ndk_platform.vendor:64 \
+    vendor.qti.hardware.display.mapper@2.0.vendor:64
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8450/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey \
-    libcrypto_shim.vendor
+    android.hardware.drm@1.4.vendor:64 \
+    android.hardware.drm-service.clearkey65 \
+    libcrypto_shim.vendor:64
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -215,18 +215,18 @@ TARGET_HAS_UDFPS := true
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
-    libudfpshandler
+    libudfpshandler:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor:64
 
 # Graphics
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libgui_vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -240,10 +240,10 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-V1-ndk_platform.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss-V1-ndk_platform.vendor:64 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
@@ -255,9 +255,9 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.memory.block@1.0.vendor \
-    libhidltransport.vendor \
-    libhwbinder.vendor
+    android.hidl.memory.block@1.0.vendor:64 \
+    libhidltransport.vendor:64 \
+    libhwbinder.vendor:64
 
 # Hotword
 PRODUCT_COPY_FILES += \
@@ -269,14 +269,14 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    charger_fw_fstab.qti \
-    fstab.qcom \
-    init.garnet.rc \
-    init.qcom.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd-odm.rc \
-    ueventd.qcom.rc
+    charger_fw_fstab.qti:64 \
+    fstab.qcom:64 \
+    init.garnet.rc:64 \
+    init.qcom.rc:64 \
+    init.recovery.qcom.rc:64 \
+    init.target.rc:64 \
+    ueventd-odm.rc:64 \
+    ueventd.qcom.rc:64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
@@ -300,19 +300,19 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.authsecret@1.0.vendor \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.authsecret@1.0.vendor:64 \
+    android.hardware.keymaster@4.1.vendor:64
 
 PRODUCT_PACKAGES += \
-    libkeymaster_messages.vendor
+    libkeymaster_messages.vendor:64
 
 # Keymint
 PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml \
-    android.hardware.security.keymint-V1-ndk_platform.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor
+    android.hardware.hardware_keystore.xml:64 \
+    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
+    android.hardware.security.rkp-V3-ndk.vendor:64 \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -358,17 +358,17 @@ PRODUCT_PACKAGES += \
 
 # Network
 PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor \
-    android.system.net.netd@1.1.vendor
+    android.hardware.tetheroffload.config@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.1.vendor:64 \
+    android.system.net.netd@1.1.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
-    android.hardware.secure_element@1.2.vendor \
+    android.hardware.nfc@1.2.vendor:64 \
+    android.hardware.secure_element@1.2.vendor:64 \
     libchrome.vendor \
     nqnfcinfo
 
@@ -421,34 +421,34 @@ PRODUCT_PACKAGES += \
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    libprotobuf-cpp-full-3.9.1-vendorcompat:64 \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat:64
 
 # QMI
 PRODUCT_PACKAGES += \
-    libcurl.vendor \
-    libjson \
-    libjsoncpp.vendor \
-    libqti_vndfwk_detect.vendor \
-    libsqlite.vendor \
-    libvndfwk_detect_jni.qti_vendor \
-    vendor.qti.hardware.systemhelper@1.0.vendor
+    libcurl.vendor:64 \
+    libjson:64 \
+    libjsoncpp.vendor:64 \
+    libqti_vndfwk_detect.vendor:64 \
+    libsqlite.vendor:64 \
+    libvndfwk_detect_jni.qti_vendor:64 \
+    vendor.qti.hardware.systemhelper@1.0.vendor:64
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.6.vendor
+    android.hardware.radio.config@1.3.vendor:64 \
+    android.hardware.radio.deprecated@1.0.vendor:64 \
+    android.hardware.radio@1.6.vendor:64
 
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl:64
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.xiaomi-multihal \
-    android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge \
-    sensors.xiaomi
+    android.hardware.sensors@2.1-service.xiaomi-multihal:64 \
+    android.frameworks.sensorservice@1.0.vendor:64 \
+    libsensorndkbridge:64 \
+    sensors.xiaomi:64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -464,7 +464,7 @@ PRODUCT_COPY_FILES += \
 
 # Servicetracker
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
+    vendor.qti.hardware.servicetracker@1.2.vendor:64
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -519,8 +519,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.qti \
-    android.hardware.usb.gadget-service.qti
+    android.hardware.usb-service.qti:64 \
+    android.hardware.usb.gadget-service.qti:64
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
@@ -565,9 +565,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     hostapd \
     hostapd_cli \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
-    libwpa_client \
+    libwifi-hal-ctrl:64 \
+    libwifi-hal-qcom:64 \
+    libwpa_client:64 \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libwifi-hal
@@ -589,7 +589,7 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
-    libnl \
+    libnl:64 \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
