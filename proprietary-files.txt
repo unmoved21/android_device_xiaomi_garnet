@@ -104,7 +104,6 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
 vendor/lib/libar-gsl.so
-vendor/lib/libar-pal.so;DISABLE_CHECKELF
 vendor/lib/liblx-ar_util.so
 vendor/lib/liblx-osal.so
 vendor/lib/libxlog.so
@@ -116,7 +115,7 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
