@@ -1,5 +1,12 @@
 # All unpinned blobs below are extracted from garnet V816.0.17.0.UNRMIXM - miui_GARNETGlobal_OS1.0.17.0.UNRMIXM
 
+# Current blobs with ELF checks disabled:
+# audio.primary.parrot depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+# libar-pal depends on libagmclient, which is a gnu makefile target
+# libawcal, libfsalgocal depends on libagmmixer, which is a gnu makefile target
+# qms, libcne, libmasc, lowi-server depend on libwpa_client, which is a gnu makefile target
+# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
 vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp
@@ -98,11 +105,11 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
 vendor/lib/libar-gsl.so
-vendor/lib/libar-pal.so
+vendor/lib/libar-pal.so;DISABLE_CHECKELF
 vendor/lib/liblx-ar_util.so
 vendor/lib/liblx-osal.so
 vendor/lib/libxlog.so
-vendor/lib64/hw/audio.primary.parrot.so
+vendor/lib64/hw/audio.primary.parrot.so;DISABLE_CHECKELF
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
@@ -115,11 +122,11 @@ vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
-vendor/lib64/libawcal.so
+vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfsalgocal.so
+vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
@@ -173,7 +180,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/bin/qms
+vendor/bin/qms;DISABLE_CHECKELF
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
@@ -208,11 +215,11 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/qms.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
-vendor/lib64/libmasc.so
+vendor/lib64/libmasc.so;DISABLE_CHECKELF
 vendor/lib64/libqms_client.so
 vendor/lib64/libshsc.so
 vendor/lib64/libwms.so
@@ -1284,7 +1291,7 @@ vendor/bin/engine-service
 vendor/bin/garden_app
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/lowirpcd
 vendor/bin/mlid
 vendor/bin/qcc-trd
@@ -1526,7 +1533,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
