@@ -458,7 +458,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal:64 \
     android.frameworks.sensorservice@1.0.vendor:64 \
     libsensorndkbridge:64 \
-    sensors.xiaomi:64
+    sensors.xiaomi.v2:64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
