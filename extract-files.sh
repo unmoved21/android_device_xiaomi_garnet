@@ -73,6 +73,9 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             sed -ni '/dolby/!p' "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
     esac
 }
 
