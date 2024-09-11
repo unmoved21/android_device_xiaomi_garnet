@@ -1268,12 +1268,12 @@ my_bigball/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/pe
 my_bigball/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|4fb8d8ab0e1dbda1582361f48395f819367edb0a
 
 # Fingerprint
-odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so
-odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so
+odm/lib/hw/fingerprint.fpc_fod.so:odm/lib/hw/fingerprint.fpc_fod.default.so;FIX_SONAME
+odm/lib/hw/fingerprint.goodix_fod.so:odm/lib/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib/libgf_hal.so
 odm/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
-odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so
-odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
+odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so;FIX_SONAME
+odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
@@ -1332,7 +1332,7 @@ vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
-vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so
+vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so;FIX_SONAME
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/libjnihelper.so
