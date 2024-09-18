@@ -87,6 +87,9 @@ function blob_fixup() {
             [ -n "$(tail -c 1 "${2}")" ] && echo >> "${2}"
             grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
             ;;
+        vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy)
+            grep -q "setsockopt: 1" "${2}" || echo "setsockopt: 1" >> "${2}"
+            ;;
     esac
 }
 
