@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin:64 \
     libbatterylistener:64 \
     libfmpal:64 \
+    libldacBT_bco:64 \
     libpalclient:64 \
     libqcompostprocbundle:64 \
     libqcomvisualizer:64 \
