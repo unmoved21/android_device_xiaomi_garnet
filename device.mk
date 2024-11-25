@@ -189,6 +189,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiDolby
 
+# Dolby VNDK libs
+PRODUCT_PACKAGES += \
+    libstagefright_foundation-v33
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor:64 \
