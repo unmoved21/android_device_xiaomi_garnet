@@ -56,7 +56,11 @@ fi
 function blob_fixup() {
     case "${1}" in
         system_ext/lib64/libwfdnative.so)
-            ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            grep -q "libinput_shim.so" "${2}" || "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
+            ;;
+        system_ext/lib64/libwfdmmsrc_system.so)
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib/libqtikeymint.so|vendor/lib64/libqtikeymint.so)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
