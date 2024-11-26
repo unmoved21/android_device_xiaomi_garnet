@@ -78,6 +78,9 @@ function blob_fixup() {
             ;;
         vendor/lib64/libwvhidl.so)
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;; 
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            grep -q "gettid: 1" "${2}" || echo "gettid: 1" >> "${2}"
             ;;   
     esac
 }
