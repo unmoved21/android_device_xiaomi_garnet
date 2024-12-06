@@ -80,6 +80,7 @@ vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
 vendor/lib/libagm.so
+vendor/lib/libmisight.so
 vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/libagm.so
 vendor/lib64/libmisight.so
@@ -91,7 +92,16 @@ vendor/etc/audio_diag.cfg
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
+vendor/lib/libats.so
+vendor/lib/libaudioroute_ext.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libar-acdb.so
+vendor/lib/libar-gpr.so
+vendor/lib/libar-gsl.so
 vendor/lib/libar-pal.so
+vendor/lib/liblx-ar_util.so
+vendor/lib/liblx-osal.so
+vendor/lib/libxlog.so
 vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
@@ -815,6 +825,7 @@ vendor/lib64/libAF.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libMiMotion.so
 vendor/lib64/libPlatformValidatorShared.so
+vendor/lib64/libMiVideoFilter.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeDspV65Stub.so
 vendor/lib64/libSnpeDspV66Stub.so
@@ -905,6 +916,7 @@ vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
 vendor/lib64/libmiphone_capture_bokeh.so
+vendor/lib64/libdlrmsc.so
 vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmis_plugin_dummy.so
 vendor/lib64/libmis_plugin_his.so
@@ -1112,6 +1124,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # DPM
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/bin/dpmQmiMgr
 vendor/bin/vendor.dpmd
 vendor/etc/dpm_vndr/vendor.dpm.conf
@@ -1642,6 +1655,8 @@ vendor/lib64/libQnnSystem.so
 vendor/lib64/libhta_hexagon_runtime_qnn.so
 
 # Perf
+system_ext/lib/libqspm-mem-utils.so
+system_ext/lib64/libqspm-mem-utils.so
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
 vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc
 vendor/etc/perf/avcsysnodesconfigs.xml
@@ -1838,6 +1853,8 @@ vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
 
 # QSPM
+system_ext/lib/vendor.qti.qspmhal-V1-ndk.so
+system_ext/lib64/vendor.qti.qspmhal-V1-ndk.so
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
