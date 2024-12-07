@@ -147,7 +147,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed(
             'android.media.audio.common.types-V2-cpp.so',
-            'android.media.audio.common.types-V3-cpp.so',
+            'android.media.audio.common.types-V4-cpp.so',
         ),
 }  # fmt: skip
 
