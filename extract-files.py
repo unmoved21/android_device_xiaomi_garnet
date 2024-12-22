@@ -96,6 +96,16 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
      (
+    'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
+    'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
+    'vendor/lib64/libgarden.so',
+    'vendor/lib64/libgarden_haltests_e2e.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.gnss-V1-ndk_platform.so',
+            'android.hardware.gnss-V1-ndk.so',
+    ),
+    (
     'system_ext/lib/libwfdservice.so',
     'system_ext/lib64/libwfdservice.so',
     ): blob_fixup()
