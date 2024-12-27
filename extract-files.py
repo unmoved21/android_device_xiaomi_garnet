@@ -62,6 +62,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
         .add_needed('libgui_shim.so'),
+    'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
+        .add_needed('liblog.so'),
     'vendor/bin/qcc-trd': blob_fixup()
          .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
