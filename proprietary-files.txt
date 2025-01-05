@@ -2,6 +2,7 @@
 
 # Current blobs with ELF checks disabled:
 # audio.primary.parrot depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+# cnss_diag depends on libwifi-hal-ctrl, which is a gnu makefile target
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libawcal, libfsalgocal depends on libagmmixer, which is a gnu makefile target
 # qms, libcne, libmasc, lowi-server depend on libwpa_client, which is a gnu makefile target
@@ -2357,7 +2358,7 @@ vendor/firmware/5_heavyClick_P_RTP.bin
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
+vendor/bin/cnss_diag;DISABLE_CHECKELF
 vendor/etc/init/init.vendor.wlan.rc
 
 # WiFi Display
