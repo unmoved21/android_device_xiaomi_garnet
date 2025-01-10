@@ -1864,6 +1864,8 @@ vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
 vendor/lib/vendor.qti.qspmhal@1.0.so
+vendor/lib64/libqspm-mem-utils-vendor.so|5286e64fd4f53006994fe27700c7c3b708461850
+vendor/lib64/vendor.qti.qspmhal-V1-ndk.so|160aced08983cd6039500405ca8dec357dba4204
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
