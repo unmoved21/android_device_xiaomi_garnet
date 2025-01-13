@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from garnet V816.0.17.0.UNRMIXM - miui_GARNETGlobal_OS1.0.17.0.UNRMIXM
+# All unpinned blobs below are extracted from garnet OS2.0.2.0.VNRMIXM - HyperOS_GARNETGlobal_OS2.0.2.0.VNRMIXM
 
 # Current blobs with ELF checks disabled:
 # cnss_diag depends on libwifi-hal-ctrl, which is a gnu makefile target
@@ -10,8 +10,8 @@
 # ACDB
 vendor/etc/acdbdata/Mise/Mise_acdb_cal.acdb
 vendor/etc/acdbdata/Mise/Mise_workspaceFileXml.qwsp
-vendor/etc/acdbdata/Mise/foursemi/Mise_acdb_cal.acdb
-vendor/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml.qwsp
+vendor/etc/acdbdata/Mise/foursemi/Mise_acdb_cal_fs.acdb
+vendor/etc/acdbdata/Mise/foursemi/Mise_workspaceFileXml_fs.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
@@ -75,8 +75,6 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 vendor/lib/rfsa/adsp/misound_res_spk_fs.bin
-vendor/lib/rfsa/adsp/misound_res_spk_power_game.bin
-vendor/lib/rfsa/adsp/misound_res_spk_power_video.bin
 
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
@@ -129,7 +127,6 @@ vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
-vendor/lib64/libmispowerop.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libresampler.so
 vendor/lib64/libxlog.so
@@ -1177,6 +1174,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Diag
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
@@ -1390,6 +1388,7 @@ vendor/lib/egl/libGLESv2_adreno.so|9a7c59169243a4a11983df7566415417a321d1a3
 vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|9e968c949b290f2fb8985bd1105a07ce3e59a806
 vendor/lib/egl/libq3dtools_adreno.so|dc7f42f038a8568b0168bb7c3483629f0b4b57f8
 vendor/lib/egl/libq3dtools_esx.so|ab39613ee4b46eeb330af5da0963888940853105
+vendor/lib/libC2D2.so
 vendor/lib/libCB.so|2fd04241592a91c61f29e992e7381201d877415a
 vendor/lib/libOpenCL.so|3f44a42a0a3c279daade55d13087a4df51bc11bc
 vendor/lib/libadreno_app_profiles.so|79a1afabd3c384de3a734c4fcfc683e8abf810e0
@@ -1408,11 +1407,13 @@ vendor/lib64/egl/libGLESv2_adreno.so|5798b715686b6ffdda4c9aaef4a5722b1a130074
 vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|7547465b6bfad5c0d14adf21da976c8fe4234cfd
 vendor/lib64/egl/libq3dtools_adreno.so|fb333261feb3c25d1daab5e10d770fab753cb82e
 vendor/lib64/egl/libq3dtools_esx.so|f490d9eb08df04876bb83598fb17fa3252858e78
+vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so|a1f8a5f58a8f3dccf0deaf693597876e8a1544eb
 vendor/lib64/libOpenCL.so|07c0984f0c662768fb16c5927d086105a734f7b0
 vendor/lib64/libOpenCL_adreno.so|1e421fd8f826398303f6a9000e08bdbed6f15b29
 vendor/lib64/libadreno_app_profiles.so|3384c21ef6af4dfbfd4f7584c61604ba923bbb9c
 vendor/lib64/libadreno_utils.so|9c183c914915fe5ceb73c21ef77b33463f4d859b
+vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libgpudataproducer.so|8ebfc949793cec8953d236766b33bb73c7405e79
 vendor/lib64/libgsl.so|26176797f0ff431bcad5ded8a26c077e75db7112
 vendor/lib64/libkcl.so|9b113120b276dd5213ab4b58737e1956560ed8fa
@@ -1436,7 +1437,7 @@ vendor/firmware/a710_zap.mdt
 vendor/firmware/gmu_gen70000.bin
 
 # Hotword enrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
@@ -1780,6 +1781,7 @@ system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqccdme.so
 system_ext/lib64/libqccfileservice.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
@@ -2389,6 +2391,7 @@ system_ext/lib/libwfduibcsinkinterface.so
 system_ext/lib/libwfduibcsrc.so
 system_ext/lib/libwfduibcsrcinterface.so
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
@@ -2411,6 +2414,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
