@@ -112,6 +112,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+media_codecs_dolby_audio.+\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+    'vendor/etc/perf/commonresourceconfigs.xml': blob_fixup()
+        .regex_replace('.+<Minor OpcodeValue="0x16" Node="/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:prime/min_freq" />+\n', '')
+        .regex_replace('.+<Minor OpcodeValue="0x12" Node="/sys/devices/system/cpu/bus_dcvs/LLCC/190b6400.qcom,bwmon-llcc/max_freq" />+\n', '')
+        .regex_replace('.+<Minor OpcodeValue="0x11" Node="/sys/devices/system/cpu/bus_dcvs/LLCC/190b6400.qcom,bwmon-llcc/min_freq" />+\n', ''),
      (
     'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
     'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
