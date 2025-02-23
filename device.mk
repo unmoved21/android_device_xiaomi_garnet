@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
     audio.primary.parrot:64 \
     audio.r_submix.default:64 \
     audio.usb.default:64 \
-    sound_trigger.primary.taro:64
+    sound_trigger.primary.parrot:64
 
 PRODUCT_PACKAGES += \
     agmcap:64 \
