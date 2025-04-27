@@ -3,6 +3,7 @@
 # Current blobs with ELF checks disabled:
 # cnss_diag depends on libwifi-hal-ctrl, which is a gnu makefile target
 # libmcs depends on libar-acdb, libagm, libats, liblx-osal which are gnu makefile targets
+# libfsalgocal depends on libagmmixer, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 # libqtigefar depends on libar-pal, which is a gnu makefile target
 
@@ -105,6 +106,7 @@ vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
+vendor/lib64/libfsalgocal.so;DISABLE_CHECKELF
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 

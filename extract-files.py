@@ -46,6 +46,7 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_vendor_suffix,
     (
         'libagm',
+        'libagmmixer',
         'libar-acdb',
         'libar-pal',
         'libats',
