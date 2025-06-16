@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
+    libaudioroute-v34 \
     libbatterylistener:64 \
     libfmpal:64 \
     libldacBT_bco:64 \
