@@ -211,8 +211,6 @@ PRODUCT_PACKAGES += \
     IFAAService
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_garnet)
-
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti:64 \
     fstab.qcom:64 \
@@ -334,6 +332,11 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
+
+
+# Properties
+PRODUCT_PACKAGES += \
+    garnet_sku_properties
 
 # QMI
 PRODUCT_PACKAGES += \
