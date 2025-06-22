@@ -51,7 +51,6 @@ AUDIO_FEATURE_ENABLED_PAL_HIDL := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
-TARGET_PROVIDES_AUDIO_HAL ?= true
 
 TARGET_USES_QCOM_MM_AUDIO := true
 
@@ -76,9 +75,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/dolby/configs/vintf/dolby_framework_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/hidl/manifest.xml \
-    hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 $(foreach sku, CN GL JP, \
     $(eval ODM_MANIFEST_SKUS += $(sku)) \
