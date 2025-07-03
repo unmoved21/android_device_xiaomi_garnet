@@ -184,14 +184,8 @@ debug.stagefright.c2inputsurface=-1
 ro.media.xml_variant.profiles=_parrot_v0
 vendor.media.omx=0
 
-# PASR
-vendor.pasr.activemode.enabled=false
-
 # Netflix
 ro.netflix.bsp_rev=Q6450-36256-1
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
 
 # Qcomd
 persist.vendor.qcomsysd.enabled=1
