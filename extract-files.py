@@ -54,8 +54,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/nfc_nci.nqx.default.hw.v1.so': blob_fixup()
-        .add_needed('libbase_shim.so'),
     'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
         .add_needed('liblog.so'),
     'vendor/bin/qcc-trd': blob_fixup()
